@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Coffee Shop List View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="CoffeeShopListViewController" customModule="Kopi_Surgawi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="c6U-rz-jPB">
+                                <rect key="frame" x="0.0" y="44" width="390" height="766"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="coffeeShopCellId" rowHeight="305" id="ecF-15-6gR" customClass="CoffeeShopViewCell" customModule="Kopi_Surgawi" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="305"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ecF-15-6gR" id="MFg-Qp-BJh">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="305"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bojaeatery" translatesAutoresizingMaskIntoConstraints="NO" id="1SK-8H-8PH">
+                                                    <rect key="frame" x="20" y="10" width="350" height="160"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="160" id="JiX-sZ-PIm"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="lTO-UN-gXY">
+                                                    <rect key="frame" x="20" y="180" width="64.333333333333329" height="69.333333333333314"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KcF-L4-0I2">
+                                                            <rect key="frame" x="0.0" y="0.0" width="64.333333333333329" height="24"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbS-EO-EqH">
+                                                            <rect key="frame" x="0.0" y="28" width="64.333333333333329" height="20.333333333333329"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="675-XM-xoo">
+                                                            <rect key="frame" x="0.0" y="52.333333333333343" width="64.333333333333329" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4xW-s1-mPe">
+                                                    <rect key="frame" x="340" y="201.66666666666666" width="30" height="27"/>
+                                                    <color key="tintColor" systemColor="systemYellowColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="7oh-1t-HhW"/>
+                                                        <constraint firstAttribute="width" constant="30" id="GGT-8A-OiE"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="lTO-UN-gXY" firstAttribute="leading" secondItem="1SK-8H-8PH" secondAttribute="leading" id="9XO-eH-Fu6"/>
+                                                <constraint firstItem="4xW-s1-mPe" firstAttribute="trailing" secondItem="1SK-8H-8PH" secondAttribute="trailing" id="Ccu-03-5sw"/>
+                                                <constraint firstAttribute="trailing" secondItem="1SK-8H-8PH" secondAttribute="trailing" constant="20" id="et5-jz-F19"/>
+                                                <constraint firstItem="lTO-UN-gXY" firstAttribute="top" secondItem="1SK-8H-8PH" secondAttribute="bottom" constant="10" id="euB-yk-xaf"/>
+                                                <constraint firstItem="4xW-s1-mPe" firstAttribute="centerY" secondItem="lTO-UN-gXY" secondAttribute="centerY" id="fFI-nB-DMZ"/>
+                                                <constraint firstItem="1SK-8H-8PH" firstAttribute="top" secondItem="MFg-Qp-BJh" secondAttribute="top" constant="10" id="hVM-vJ-UyX"/>
+                                                <constraint firstAttribute="bottom" secondItem="lTO-UN-gXY" secondAttribute="bottom" priority="250" constant="15" id="nqK-Vf-x9O"/>
+                                                <constraint firstItem="1SK-8H-8PH" firstAttribute="leading" secondItem="MFg-Qp-BJh" secondAttribute="leading" constant="20" id="zjz-hL-VgD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="addressLabel" destination="vbS-EO-EqH" id="eaO-55-IJL"/>
+                                            <outlet property="categoryLabel" destination="675-XM-xoo" id="nwL-36-mva"/>
+                                            <outlet property="nameLabel" destination="KcF-L4-0I2" id="nou-EX-nuj"/>
+                                            <outlet property="thumbFavorited" destination="4xW-s1-mPe" id="SSx-FG-gwm"/>
+                                            <outlet property="thumbImageView" destination="1SK-8H-8PH" id="FLa-fT-zHh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="c6U-rz-jPB" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="RqU-NT-QzS"/>
+                            <constraint firstItem="c6U-rz-jPB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="W40-mp-Ahe"/>
+                            <constraint firstItem="c6U-rz-jPB" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="rbH-EO-CFj"/>
+                            <constraint firstItem="c6U-rz-jPB" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="smm-Z5-9BR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="c6U-rz-jPB" id="Jbw-qY-Apy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93.84615384615384" y="63.981042654028435"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bojaeatery" width="426.66665649414062" height="426.66665649414062"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
